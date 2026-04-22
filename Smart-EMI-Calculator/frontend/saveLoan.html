@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+  <title>Save Loan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="navbar">
+  <a href="saveLoan.html">Home</a>
+  <a href="viewLoans.html">View Loans</a>
+</div>
+
+<div class="form-container">
+  <h2>Enter Loan Details</h2>
+  <input id="name" type="text" placeholder="Name" maxlength="30" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '')">
+  <input id="principal" type="text" placeholder="Principal" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); calculateEMI();">
+  <input id="rate" type="text" placeholder="Rate (%)" maxlength="2" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); calculateEMI();">
+  <input id="time" type="text" placeholder="Time (years)" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, ''); calculateEMI();">
+  <h3 style="text-align:center;">EMI: ₹ <span id="emiValue">0</span></h3>
+  <p id="message" style="text-align:center; color:green;"></p>
+  <button onclick="saveLoan()">Save Loan</button>
+</div>
+<p id="errorMsg" style="color:red; text-align:center;"></p>
+</div>
+<script src="saveLoan.js"></script>
+</body>
+</html>
