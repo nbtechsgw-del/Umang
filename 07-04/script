@@ -1,0 +1,23 @@
+const btn = document.getElementById('action-btn');
+const title = document.getElementById('main-title');
+
+btn.addEventListener('click', function() {
+    title.innerText = "Interactivity Active!";
+    document.body.style.backgroundColor = "#d1e7dd";
+    alert("You clicked the button!");
+});
+
+const form = document.getElementById('my-form');
+const input = document.getElementById('user-input');
+const error = document.getElementById('error-msg');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    if (input.value === "") {
+        error.style.display = "block";
+    } else {
+        error.style.display = "none";
+        alert("Success! Hello " + input.value);
+    }
+});
