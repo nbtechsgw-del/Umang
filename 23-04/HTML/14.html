@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comprehensive Registration Form</title>
+</head>
+<body>
+
+    <h2>Complete Student Registration</h2>
+    <form>
+        <fieldset>
+            <legend>Account Details</legend>
+            Enter Name: <input type="text" maxlength="30" required> <br><br>
+            Enter Password: <input type="password" maxlength="16" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            Age: <input type="number" min="5" max="100"> <br><br>
+            
+            Date of Birth: <input type="date"> <br><br>
+            
+            Gender: 
+            <input type="radio" name="gender" value="male"> Male 
+            <input type="radio" name="gender" value="female"> Female 
+            <input type="radio" name="gender" value="other"> Other
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Academic Details</legend>
+            Month of Admission: <input type="month"> <br><br>
+            
+            Year of 10th Passed: 
+            <input type="number" min="1990" max="2026" placeholder="YYYY"> <br><br>
+            
+            Qualification: 
+            <select name="qualification">
+                <option value="highschool">High School (10th)</option>
+                <option value="intermediate">Intermediate (12th)</option>
+                <option value="diploma">Diploma</option>
+                <option value="graduate">Graduate</option>
+            </select> <br><br>
+            
+            Select Branch:
+            <select name="branch">
+                <option value="cse">Computer Science</option>
+                <option value="it">Information Technology</option>
+                <option value="ece">Electronics</option>
+                <option value="mech">Mechanical</option>
+            </select> <br><br>
+            
+            Category: 
+            <input list="cat" name="category" placeholder="Search/Select...">
+            <datalist id="cat">
+                <option value="General">
+                <option value="OBC">
+                <option value="SC">
+                <option value="ST">
+            </datalist>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preferences & Skills</legend>
+            Pick your Favorite Color: <input type="color"> <br><br>
+            
+            Select Skill Range (0 to 100): 
+            <input type="range" min="0" max="100" step="10">
+        </fieldset>
+
+        <br>
+        
+        <input type="submit" value="Register Now">
+        <input type="reset" value="Clear Form">
+    </form>
+
+</body>
+</html>

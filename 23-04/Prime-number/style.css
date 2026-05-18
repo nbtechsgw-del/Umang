@@ -1,0 +1,56 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    h2 {
+      margin-left: 20px;
+    }
+
+    .container {
+      width: 500px;
+      margin: 20px auto;
+      border: 1px solid #999;
+      background-color: #fff;
+    }
+
+    .title {
+      text-align: center;
+      font-weight: bold;
+      padding: 10px;
+      border-bottom: 1px solid #999;
+    }
+
+    .row {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .row label {
+      width: 120px;
+      padding: 10px;
+      border-right: 1px solid #ccc;
+    }
+
+    .row input,
+    .row textarea {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+
+    textarea {
+      height: 80px;
+      resize: none;
+    }
+
+    .btn-container {
+      text-align: center;
+      padding: 10px;
+    }
+
+    button {
+      padding: 5px 15px;
+      cursor: pointer;
+    }

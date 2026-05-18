@@ -1,0 +1,54 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+}
+
+h2 {
+      text-align: center;
+}
+
+.container {
+      width: 550px;
+      margin: 20px auto;
+      border: 1px solid #999;
+      background-color: #fff;
+}
+
+.title {
+      text-align: center;
+      font-weight: bold;
+      padding: 10px;
+      border-bottom: 1px solid #999;
+}
+
+.row {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+}
+
+.row label {
+      width: 150px;
+      padding: 10px;
+      border-right: 1px solid #ccc;
+}
+
+.row input {
+      width: 120px;
+      margin: 5px;
+      padding: 5px;
+}
+
+.row span {
+      padding: 10px;
+      color: #555;
+}
+
+.btn-container {
+      text-align: center;
+      padding: 10px;
+}
+
+button {
+      padding: 5px 15px;
+      cursor: pointer;
+}

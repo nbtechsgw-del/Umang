@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+  <title>View Loans</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+<div class="navbar">
+  <a href="saveLoan.html">Home</a>
+  <a href="viewLoans.html">View Loans</a>
+  <a onclick="logout()">Logout</a>
+</div>
+<input type="text" id="searchInput" placeholder="Search by name..." maxlength="30" onkeyup="filterLoans()">
+<h2>All Loans</h2>
+
+<table border="1">
+  <thead>
+  <tr>
+    <th></th>
+    <th>Name</th>
+    <th>Principal</th>
+    <th>Rate</th>
+    <th>Time</th>
+    <th>EMI</th>
+    <th>Actions</th>
+    <th></th>
+  </tr>
+</thead>
+  <tbody id="tableData">
+</tbody>
+</table>
+<button onclick="loadData()">Load Loans</button>
+
+<div id="detailsSection" style="display: none;">
+  <h3 style="text-align:center;">EMI Breakdown</h3>
+  <div class="chart-container">
+    <canvas id="emiChart"></canvas>
+  </div>
+
+  <h3 style="text-align:center;">Amortization Schedule</h3>
+  <table id="scheduleTable">
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>EMI</th>
+        <th>Interest</th>
+        <th>Principal</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<div style="text-align:center;">
+  <button onclick="compareLoans()">Compare Selected Loans</button>
+</div>
+
+<div id="compareModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 style="text-align:center;">Loan Comparison</h2>
+    <table id="compareTable">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Loan 1</th>
+          <th>Loan 2</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div><script src="viewLoans.js"></script>
+</body>
+</html>

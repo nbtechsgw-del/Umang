@@ -1,0 +1,84 @@
+body {
+    font-family: 'seoge UI', sans-serif;;
+    margin: 0;
+    background-color: #f8f9f0;
+    transition: background-color 0.5s ease;
+}
+
+.navbar {
+    display: flex; 
+    justify-content: space-between;
+    padding: 20px;
+    background: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg,#6e8efb,#a777e3);
+    color: white;
+}
+
+.hero button{
+    padding: 12px 25px;
+    font-size:1rem;
+    background: white;
+    color: #6e8efd;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.hero button:hover{
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    min-width: 250px;
+    text-align: center;
+}
+
+#my-form{
+    background: white;;
+    padding:30px;
+    border-radius:12px;
+    max-width:400px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .hero h1{
+        font-size:1.8rem;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,30 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(5px);
+            text-align: center;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        input[type="radio"] {
+            cursor: pointer;
+        }

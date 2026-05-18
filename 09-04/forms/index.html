@@ -1,0 +1,86 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>User Registration</title>
+        <link rel="stylesheet" href ="style.css">
+    </head>
+    <body>
+
+        <div class="form-wrapper">
+        <form id="regForm" novalidate>
+            <h1>Join us</h1>
+
+            <div class="input-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" required placeholder="abc xyz">
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required placeholder="abc@example.com">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password (Min 6 characters)</label>
+                <input type="password" id="password" required>
+                <span class="error" id="passError"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="confirmPass">Confirm Password</label>
+                <input type="password" id="confirmPass" required>
+                <span class="error" id="confirmError"></span>
+            </div>
+
+            <div class="horizontal-group">
+                <label class ="section-label">Gender:</label>
+                <div class="options-container">
+                <div class="option-item">
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                </div>
+
+                <div class="option-item">
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                </div>
+                </div>
+                <span class="error" id="genderError"></span>
+            </div>
+
+            <div class="horizontal-group">
+                <label class="section-label">Skills:</label>
+                <div class="options-container">
+                <div class="option-item">
+                    <input type="checkbox" name="skills" id="html" value="HTML">
+                    <label for="html">HTML</label>
+                </div>
+                <div class="option-item">
+                    <input type="checkbox" name="skills" id="css" value="CSS">
+                    <label for="css">CSS</label>   
+                </div>
+                <div class="option-item">
+                    <input type="checkbox" name="skills" id="js" value="JS">
+                    <label for="js">JS</label>   
+                </div>
+                </div>
+                <span class="error" id="skillsError"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="resume">Upload resume</label>
+                <input type="file" id="resume" required>
+                <span class="error" id="fileError"></span>
+            </div>
+
+            <button type="submit" id="submitBtn">Register Now</button>
+            <p id="successMsg"></p>
+        </form>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

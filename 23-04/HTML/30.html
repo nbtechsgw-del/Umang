@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marriage Eligibility Checker</title>
+</head>
+<body>
+
+    <h2>Marriage Eligibility Checker</h2>
+    
+    <form onsubmit="return false;">
+        Enter Age: <input type="number" id="ageInput" placeholder="e.g. 21"> <br><br>
+        
+        Gender: 
+        <input type="radio" name="gender" id="male" value="Male"> Male
+        <input type="radio" name="gender" id="female" value="Female"> Female <br><br>
+        
+        <button onclick="checkEligibility()">Check Eligibility</button>
+    </form>
+
+    <h3 id="display"></h3>
+
+    <script src="30.js"></script>
+</body>
+</html>
