@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hide and Show Elements</title>
+    <style>
+        #myBox {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: lightcoral;
+            margin-top: 20px;
+            border: 2px solid #333;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>JavaScript Hide and Show Example</h2>
+
+    <button onclick="hideElement()">Hide Box</button>
+    <button onclick="showElement()">Show Box</button>
+    <button onclick="toggleElement()">Toggle (Hide/Show)</button>
+
+    <div id="myBox">
+        Now you see me!
+    </div>
+
+    <script>
+        const box = document.getElementById("myBox");
+
+        function hideElement() {
+            box.style.display = "none";
+        }
+
+        function showElement() {
+            box.style.display = "block";
+        }
+
+        function toggleElement() {
+            if (box.style.display === "none") {
+                box.style.display = "block";
+            } else {
+                box.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

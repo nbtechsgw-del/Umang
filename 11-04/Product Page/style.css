@@ -1,0 +1,65 @@
+/* General Reset */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Card Improvements */
+.product-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 12px !important;
+    position: relative;
+}
+
+/* Hover Effect: Increase shadow and lift card */
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding: 20px;
+    background: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.product-desc {
+    font-size: 0.85rem;
+    height: 40px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.price-tag {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.rating-stars {
+    color: #ffc107; /* Gold stars */
+}
+
+/* Button UI State Change */
+.btn-added {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+    color: white !important;
+}
+
+.badge-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}

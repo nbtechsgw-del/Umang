@@ -1,0 +1,242 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0; /* Added padding reset */
+  background: linear-gradient(to right, #eef2f3, #dfe9f3);
+  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Prevents padding from pushing elements out of their boxes */
+}
+
+.navbar {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+  /* This forces it to span the full viewport width regardless of parents */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* Ensure the body doesn't create a horizontal scrollbar from the fix above */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+.navbar a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #f1c40f;
+}
+
+.chart-container {
+  width: 300px;
+  margin: 20px auto;
+
+}
+
+#detailsSection {
+  display: none;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#detailsSection.show {
+  display: block;
+  opacity: 1;
+}
+
+#scheduleTable {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+#scheduleTable th {
+  background: #2c3e50;
+  color: white;
+}
+
+#scheduleTable td, th {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.form-container {
+  width: 90%;
+  align-self: center;
+  max-width: 360px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Ensure inputs stay inside the form */
+.form-container input {
+  width: 100%; 
+  display: block;
+}
+
+.form-container:hover {
+  transform: scale(1.02);
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+tr:hover {
+  background: #f1f1f1;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52,152,219,0.3);
+  outline: none;
+}
+
+#searchInput {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 50%;
+}
+
+button {
+  width: auto; /* Buttons will now only be as wide as their text */
+  min-width: 120px;
+  padding: 10px 20px;
+  margin: 10px auto;
+  display: block; /* Allows centering with margin: auto */
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+table {
+  width: 95%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  table-layout: auto; /* Allows columns to adjust to content */
+}
+
+/* Specific fix for the buttons inside the table */
+td .actions-container {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+td button {
+  margin: 0;
+  padding: 6px 12px;
+  font-size: 14px;
+  min-width: 0;
+  display: inline-block; /* Keeps them side-by-side in the cell */
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  word-wrap: break-word; /* Prevents text overflow */
+}
+
+th {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background: #ecf0f1;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: white;
+  width: 80%;
+  max-width: 700px;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}

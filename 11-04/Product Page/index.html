@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick-cart | Responsive Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark shadow-sm mb-5">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            <i class="fas fa-bolt text-warning me-2"></i>Quick-cart
+        </a>
+    </div>
+</nav>
+
+<div class="container mb-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow-sm">
+                <div class="badge-container p-2">
+                    <span class="badge bg-danger">Save 15%</span>
+                </div>
+                <img src="sony.webp" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="product-title">Sony WH-1000XM5</h5>
+                    <p class="product-desc text-muted">Active Noise Cancelling Wireless Bluetooth Over Ear Headphones with Mic for Clear Calling,Battery Life 30 Hours-Mid Night Blue.</p>
+                    <div class="rating-stars mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span class="small text-secondary">(4.4)</span>
+                    </div>
+                    <div class="mt-auto">
+                        <div class="price-tag mb-3">₹26,930</div>
+                        <button class="btn btn-primary w-100 btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow-sm">
+                <div class="badge-container p-2">
+                    <span class="badge bg-info text-dark">New Arrival</span>
+                </div>
+                <img src="logitech.webp" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="product-title">Logitech MX Master 3S </h5>
+                    <p class="product-desc text-muted">Wireless Performance Mouse with Ultra-Fast Scrolling, 8K DPI, Track on Glass, Quiet Clicks, USB-C, Bluetooth -Graphite</p>
+                    <div class="rating-stars mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span class="small text-secondary">(4.2)</span>
+                    </div>
+                    <div class="mt-auto">
+                        <div class="price-tag mb-3">₹7,994</div>
+                        <button class="btn btn-primary w-100 btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow-sm">
+                <div class="badge-container p-2">
+                    <span class="badge bg-info text-dark">best seller</span>
+                </div>
+                <img src="control.webpsaa" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="product-title">Sony DualSense</h5>
+                    <p class="product-desc text-muted">Wireless Controller Grey Camo (PS5)</p>
+                    <div class="rating-stars mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span class="small text-secondary">(4.2)</span>
+                    </div>
+                    <div class="mt-auto">
+                        <div class="price-tag mb-3">₹6,390</div>
+                        <button class="btn btn-primary w-100 btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card product-card h-100 border-0 shadow-sm">
+                <div class="badge-container p-2">
+                    <span class="badge bg-info text-dark">most searched</span>
+                </div>
+                <img src="marshall.webp" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="product-title">Marshall Emberton</h5>
+                    <p class="product-desc text-muted">20 W Wireless Bluetooth Portable Outdoor Speaker (Black & Brass)</p>
+                    <div class="rating-stars mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span class="small text-secondary">(4.2)</span>
+                    </div>
+                    <div class="mt-auto">
+                        <div class="price-tag mb-3">₹14,999</div>
+                        <button class="btn btn-primary w-100 btn-add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="cartToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                <i class="fas fa-check-circle me-2"></i> Item successfully added to cart!
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

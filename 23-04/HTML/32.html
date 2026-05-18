@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Radio Color Changer</title>
+    <link rel="stylesheet" href="32.css">
+</head>
+<body id="mainBody">
+
+    <div class="card">
+        <h1>Theme Selector</h1>
+        <p>Choose a background color below:</p>
+
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="bgTheme" value="#ffffff" onchange="changeBg(this.value)" checked> White
+            </label>
+            
+            <label>
+                <input type="radio" name="bgTheme" value="#3498db" onchange="changeBg(this.value)"> Blue
+            </label>
+            
+            <label>
+                <input type="radio" name="bgTheme" value="#2ecc71" onchange="changeBg(this.value)"> Green
+            </label>
+            
+            <label>
+                <input type="radio" name="bgTheme" value="#e74c3c" onchange="changeBg(this.value)"> Red
+            </label>
+            
+            <label>
+                <input type="radio" name="bgTheme" value="#2c3e50" onchange="changeBg(this.value)"> Dark
+            </label>
+        </div>
+    </div>
+
+    <script src="32.js"></script>
+
+</body>
+</html>

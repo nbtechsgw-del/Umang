@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Edit Loan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="navbar">
+    <a href="saveLoan.html">Home</a>
+    <a href="viewLoans.html">View Loans</a>
+  </div>
+
+  <h2>Edit Loan</h2>
+
+  <div class="form-container">
+    <input id="name" placeholder="Name">
+    <input id="principal" type="number" placeholder="Principal">
+    <input id="rate" type="number" placeholder="Rate">
+    <input id="time" type="number" placeholder="Time (years)">
+
+    <button onclick="updateLoan()">Update Loan</button>
+  </div>
+
+</div>
+
+<script src="editLoan.js"></script>
+
+</body>
+</html>

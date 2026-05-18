@@ -1,0 +1,63 @@
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 35vh;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #ff6b4a;
+            height: 25vh;
+        }
+
+        .header-title {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: bold;
+        }
+
+        .header-subtitle {
+            margin: 10px 0 0;
+            font-size: 1.1em;
+            color: #222;
+        }
+
+        .white-text {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .image-title {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .image-subtitle {
+            margin: 10px 0 0;
+            font-size: 1em;
+        }
+
+        .repeated-background {
+            background-image: url('https://www.transparenttextures.com/patterns/black-linen.png'); 
+            background-repeat: repeat;
+            background-color: #333;
+        }
+
+        .scrolling-background {
+            background-image: url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkyMXwwfDF8c2VhcmNofDIyfHxzY2VuZXJ5fGVufDB8fHx8MTY3ODk0MDgwMA&ixlib=rb-4.0.3&q=80&w=1080');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 60vh;
+        }
