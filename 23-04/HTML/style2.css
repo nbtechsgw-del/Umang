@@ -1,0 +1,65 @@
+    .box {
+            background-color: lightgrey;
+            width: 300px;
+        }
+
+        .border-only {
+            border: 5px solid red;
+        }
+
+        .padding-only {
+            border: 5px solid blue;
+            padding: 40px;
+        }
+
+        .margin-only {
+            border: 5px solid green;
+            margin: 50px;
+        }
+
+        .box {
+            background-color: #e0e0e0;
+            width: 300px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+
+        /* 1. Border Properties */
+        .border-practical {
+            border-style: dashed;
+            border-width: 5px;
+            border-color: red;
+            border-top-color: blue; /* Different color for top */
+        }
+
+        /* 2. Padding Properties (Space inside) */
+        .padding-practical {
+            padding-top: 10px;
+            padding-right: 50px;
+            padding-bottom: 30px;
+            padding-left: 5px;
+            background-color: lightblue;
+        }
+
+        /* 3. Margin Properties (Space outside) */
+        .margin-practical {
+            margin-top: 50px;
+            margin-left: 100px;
+            background-color: lightgreen;
+        }
+
+        /* 4. Text/Font Formatting */
+        .text-practical {
+            font-family: Arial;
+            font-size: 22px;
+            font-weight: bold;
+            font-style: italic;
+            color: purple;
+            text-align: right;
+            text-decoration: underline;
+            text-transform: capitalize;
+            /* Width and Height */
+            width: 400px;
+            height: 100px;
+            border: 2px solid black;
+        }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-wrapper">
+    <form id="regForm" novalidate>
+        <h1>JOIN US</h1>
+
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" id="fullname" placeholder="abc xyz">
+            <span class="error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="abc@example.com">
+            <span class="error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <div class="input-wrapper">
+                <input type="password" id="password">
+                <span class="toggle-password">Show</span>
+            </div>
+            <span class="error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Confirm Password</label>
+            <div class="input-wrapper">
+                <input type="password" id="confirmPass">
+                <span class="toggle-password">Show</span>
+            </div>
+            <span class="error"></span>
+        </div>
+
+        <div class="horizontal-group">
+            <label class="section-label">Gender:</label>
+                <div class="options">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            <span class="error" id="genderError"></span>
+        </div>
+
+        <div class="horizontal-group">
+            <label class="section-label">Skills:</label>
+                <div class="options">
+                <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+                <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                <label><input type="checkbox" name="skills" value="JS"> JS</label>
+                </div>
+            <span class="error" id="skillsError"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Upload Resume</label>
+            <input type="file" id="resume">
+            <span class="error"></span>
+        </div>
+
+        <button type="submit">Register Now</button>
+        <p id="successMsg"></p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
